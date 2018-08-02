@@ -33,10 +33,24 @@ void TextEditor::OnBtnOpen(){
 			buf[n]=0;
 			ui.textContent->setPlainText(GBK::ToUnicode(buf));
 		}
-		fclose(fp);
+		delete [] buf;	//释放内存
+		fclose(fp);	//关闭文件
 	}
 }
 
 void TextEditor::OnBtnSave(){
+	QString filepath=QFileDialog::getSaveFileName(
+		this,	//父窗口
+		GBK::ToUnicode("保存")	//标题caption
+		);
+	if(filepath.length()>0){
+		QString text=ui.textContent->toPlainText();
+		string gbk_text=GBK::FromUnicode(text);
+		string gbk_filename=GBK::FromUnicode(filepath);
 
+		//打开文件
+		FILE* fp = fopen(gbk_filename.c_str(),"wb");
+		fwrite(gbk_text.c_str(),1,gbk_text.length(),fp);
+		fclose(fp);
+	}
 }
