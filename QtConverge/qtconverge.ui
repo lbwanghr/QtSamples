@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtConvergeClass</class>
+ <widget class="QMainWindow" name="QtConvergeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt参考包</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>390</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="btnTextEditor"/>
+    <addaction name="btnModualDialog"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="btnTextEditor">
+   <property name="icon">
+    <iconset resource="qtconverge.qrc">
+     <normaloff>:/QtConverge/Resources/text_72px_34838_easyicon.net.png</normaloff>:/QtConverge/Resources/text_72px_34838_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>文本编辑器</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="btnModualDialog">
+   <property name="icon">
+    <iconset resource="qtconverge.qrc">
+     <normaloff>:/QtConverge/Resources/dialog_48px_537962_easyicon.net.png</normaloff>:/QtConverge/Resources/dialog_48px_537962_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>模式与非模式对话框</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qtconverge.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,7 +1,7 @@
 #include "texteditor.h"
 
 TextEditor::TextEditor(QWidget *parent, Qt::WFlags flags)
-	: QMainWindow(parent, flags){
+	: QDialog(parent, flags){
 	ui.setupUi(this);
 	connect(ui.btnOpen,SIGNAL(clicked()),this,SLOT(OnBtnOpen()));
 	connect(ui.btnSave,SIGNAL(clicked()),this,SLOT(OnBtnSave()));

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="QtConverge">
+    <file>Resources/dialog_48px_537962_easyicon.net.png</file>
+    <file>Resources/text_72px_34838_easyicon.net.png</file>
+  </qresource>
+</RCC>

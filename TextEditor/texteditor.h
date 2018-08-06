@@ -8,7 +8,7 @@
 #include <QFileDialog>
 #include <GBK.h>
 
-class TextEditor : public QMainWindow{
+class TextEditor : public QDialog{
 	Q_OBJECT
 
 public:
