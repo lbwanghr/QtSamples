@@ -3,6 +3,8 @@
 
 #include <QtGui/QWidget>
 #include "ui_mythread.h"
+#include <QFileDialog>
+#include "DlgTransfer.h"
 
 class MyThread : public QWidget{
 	Q_OBJECT
@@ -13,6 +15,10 @@ public:
 
 private:
 	Ui::MyThreadClass ui;
+
+private slots:
+	int OnBtnBrowser();
+	int OnBtnTransfer();
 };
 
 #endif // MYTHREAD_H
