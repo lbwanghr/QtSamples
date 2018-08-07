@@ -5,6 +5,7 @@
 #include "ui_qtconverge.h"
 #include <TextEditor/texteditor.h>
 #include <NonModualDialog/nonmodualdialog.h>
+#include <Timer/timer.h>
 
 class QtConverge : public QMainWindow{
 	Q_OBJECT
@@ -15,11 +16,12 @@ public:
 
 private:
 	Ui::QtConvergeClass ui;
-	//TextEditor* dlgTextEditor;
+	Timer* dlgTimer;
 
 private slots:
 	int onStartTextEditor();
 	int onStartModualDialog();
+	int onStartTimer();
 };
 
 #endif // QTCONVERGE_H

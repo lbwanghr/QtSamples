@@ -29,6 +29,7 @@
     </property>
     <addaction name="btnTextEditor"/>
     <addaction name="btnModualDialog"/>
+    <addaction name="btnTimer"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -63,6 +64,18 @@
    </property>
    <property name="shortcut">
     <string>F2</string>
+   </property>
+  </action>
+  <action name="btnTimer">
+   <property name="icon">
+    <iconset resource="qtconverge.qrc">
+     <normaloff>:/QtConverge/Resources/timer_72px_568815_easyicon.net.png</normaloff>:/QtConverge/Resources/timer_72px_568815_easyicon.net.png</iconset>
+   </property>
+   <property name="text">
+    <string>计时器</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
    </property>
   </action>
  </widget>

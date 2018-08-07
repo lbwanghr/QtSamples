@@ -39,6 +39,9 @@
     <Filter Include="Resource Files\TextEditor">
       <UniqueIdentifier>{7195c4e6-c457-4063-b4c3-efd82499dc6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Timer">
+      <UniqueIdentifier>{ca01e754-087f-442f-8d32-97f834949a26}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -98,6 +101,18 @@
     <ClCompile Include="GeneratedFiles\qrc_nonmodualdialog.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Timer\timer.cpp">
+      <Filter>Resource Files\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_timer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_timer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_timer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="qtconverge.h">
@@ -139,6 +154,15 @@
     <CustomBuild Include="..\NonModualDialog\nonmodualdialog.qrc">
       <Filter>Resource Files\ModualDialog</Filter>
     </CustomBuild>
+    <CustomBuild Include="..\Timer\timer.h">
+      <Filter>Resource Files\Timer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Timer\timer.qrc">
+      <Filter>Resource Files\Timer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Timer\timer.ui">
+      <Filter>Resource Files\Timer</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_qtconverge.h">
@@ -154,6 +178,9 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_SearchWindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_timer.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

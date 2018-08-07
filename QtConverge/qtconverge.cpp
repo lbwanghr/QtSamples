@@ -5,7 +5,8 @@ QtConverge::QtConverge(QWidget *parent, Qt::WFlags flags)
 	ui.setupUi(this);
 	connect(ui.btnTextEditor,SIGNAL(triggered()),this,SLOT(onStartTextEditor()));
 	connect(ui.btnModualDialog,SIGNAL(triggered()),this,SLOT(onStartModualDialog()));
-	//dlgTextEditor=new TextEditor(this);
+	connect(ui.btnTimer,SIGNAL(triggered()),this,SLOT(onStartTimer()));
+	dlgTimer = new Timer(this);
 }
 
 QtConverge::~QtConverge(){
@@ -15,11 +16,14 @@ QtConverge::~QtConverge(){
 int QtConverge::onStartTextEditor(){
 	TextEditor dlgTextEditor(this);
 	dlgTextEditor.exec();
-	//dlgTextEditor->show();
 	return 0;
 }
 int QtConverge::onStartModualDialog(){
 	NonModualDialog dlgModualDialog(this);
 	dlgModualDialog.exec();
+	return 0;
+}
+int QtConverge::onStartTimer(){
+	dlgTimer->show();
 	return 0;
 }
